@@ -8,20 +8,20 @@ My work includes the implementation of all functions in rend.cpp, half of Applic
 
 Gouraud shading:
 
-![](https://raw.githubusercontent.com/OrderAngel/Picture/main/blog_files/img/Pic-Github/OpenGLconfig/20210515015728.png)
+![](https://github.com/tyang863/CS580project-Cube-Mapping/blob/main/1.png)
 
 Phong shading:
 
-![](https://raw.githubusercontent.com/OrderAngel/Picture/main/blog_files/img/Pic-Github/OpenGLconfig/20210515015816.png)
+![](https://github.com/tyang863/CS580project-Cube-Mapping/blob/main/2.png)
 
 Cube mapping – skybox:
 
-![](https://raw.githubusercontent.com/OrderAngel/Picture/main/blog_files/img/Pic-Github/OpenGLconfig/20210515015934.png)
+![](https://github.com/tyang863/CS580project-Cube-Mapping/blob/main/5.png)
 
 Cube mapping – reflection:
 
-![](https://raw.githubusercontent.com/OrderAngel/Picture/main/blog_files/img/Pic-Github/OpenGLconfig/20210515020035.png)
+![](https://github.com/tyang863/CS580project-Cube-Mapping/blob/main/3.png)
 
 Cube mapping – refraction:
 
-![](https://raw.githubusercontent.com/OrderAngel/Picture/main/blog_files/img/Pic-Github/OpenGLconfig/20210515020111.png)
+![](https://github.com/tyang863/CS580project-Cube-Mapping/blob/main/4.png)
