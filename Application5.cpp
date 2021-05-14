@@ -22,11 +22,6 @@ static char THIS_FILE[]=__FILE__;
 #define INFILE  "sphere.asc"
 #define OUTFILE "output.ppm"
 
-
-extern int tex_fun(float u, float v, GzColor color); /* image texture function */
-extern int ptex_fun(float u, float v, GzColor color); /* procedural texture function */
-extern int GzFreeTexture();
-
 //void shade(GzCoord norm, GzCoord color);
 
 //////////////////////////////////////////////////////////////////////
@@ -207,13 +202,6 @@ GzMatrix	rotateY =
         valueListShader[4] = (GzPointer)&specpower;
 
         nameListShader[5]  = GZ_TEXTURE_MAP;
-#if 0   /* set up null texture function or valid pointer */
-        valueListShader[5] = (GzPointer)0;
-#else
-        valueListShader[5] = (GzPointer)(tex_fun);	/* or use ptex_fun */
-#endif
-        status |= m_pRender->GzPutAttribute(6, nameListShader, valueListShader);
-
 
 	status |= m_pRender->GzPushMatrix(scale);  
 	status |= m_pRender->GzPushMatrix(rotateY); 
@@ -353,7 +341,6 @@ int Application5::Clean()
 	int	status = 0; 
 
 	delete(m_pRender);
-	status |= GzFreeTexture();
 	
 	if (status) 
 		return(GZ_FAILURE); 
